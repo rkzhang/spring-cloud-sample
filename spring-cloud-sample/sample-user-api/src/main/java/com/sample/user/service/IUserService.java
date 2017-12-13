@@ -9,4 +9,5 @@ public interface IUserService {
 
 	@GetMapping("/findUserInfo")
 	String findUserInfo(@RequestParam(value="userId")String userId);
+
 }
