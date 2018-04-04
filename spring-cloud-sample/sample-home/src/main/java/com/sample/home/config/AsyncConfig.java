@@ -19,7 +19,7 @@ public class AsyncConfig {
     /** Set the capacity for the ThreadPoolExecutor's BlockingQueue. */  
     private int queueCapacity = 10;  
   
-    private String ThreadNamePrefix = "MyLogExecutor-";  
+    private String ThreadNamePrefix = "AsyncExecutor-";  
   
     @Bean  
     public Executor logExecutor() {  

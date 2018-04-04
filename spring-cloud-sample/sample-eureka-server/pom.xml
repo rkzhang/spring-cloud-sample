@@ -58,7 +58,7 @@
 			<id>dev</id>
 			<properties>
 				<profileActive>dev</profileActive>
-				<sys.path>D:</sys.path>
+				<sys.path>C:</sys.path>
 				<log.file.level>debug</log.file.level>
 			</properties>
 			<activation>

@@ -30,7 +30,7 @@ public class UserService {
         return null;
     }
 
-    @HystrixCommand(commandProperties = @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000"))
+    @HystrixCommand(commandProperties = @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500"))
     public List<String> findByIds(List<Long> ids) {
         log.info("findByIds : " + ids);
         List<String> result = restTemplate.getForObject("http://hystrix-collapser-provider/users?ids={1}",
